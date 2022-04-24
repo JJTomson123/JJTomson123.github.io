@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="./static/image/R.jpg">
+    <!-- Bootstrap CSS -->
+    
+    
+    <link rel="stylesheet" type="text/css" href="./static/main11.css">
+    
+
+    
+    
+    <title>My Blog</title>
+
+    <script language="JavaScript">
+      function ShowTime(){
+        var NowDate=new Date();
+        var d=NowDate.getDate();
+        var tr=NowDate.getMonth();
+        var y=NowDate.getFullYear();
+        var h=NowDate.getHours();
+        var m=NowDate.getMinutes();
+        var s=NowDate.getSeconds();
+        document.getElementById('showbox').innerHTML = (tr+1)+'-'+d+'-'+y+' '+h+':'+m+':'+s;
+        setTimeout('ShowTime()',1000);
+    }
+    </script>
+</head>
+<body onload="ShowTime()">
+    <header class="site-header">
+      <nav class="navbar navbar-dark bg-steel">
+        <div class="container">
+          
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+                <h1><a class="nav-item nav-link" href="index.html">Home</a>
+                    <a class="nav-item nav-link" href="hobbies.html">Hobbies</a></h1>
+            </div>
+
+            <div class="navbar-nav">
+              <p class="nav-item nav-link" id="showbox"></p>
+            </div>
+         
+            
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main role="main" class="container">
+      <div class="row">
+        <div>
+            <h1>My Hobbies</h1>
+            <h3>1.Rope skipping</h3>
+            <h5><a href="https://ropeskippingsport.org/">https://ropeskippingsport.org/</a></h5>
+            <h3>2.Music by Nirvana</h3>
+            <h5><a href="https://www.youtube.com/watch?v=hTWKbfoikeg">https://www.youtube.com/watch?v=hTWKbfoikeg</a></h5>
+            <h3>3.NASA missions</h3>
+            <h5><a href="https://mars.nasa.gov/">https://mars.nasa.gov/</a></h5>
+        </div>
+        
+      </div>
+    </main>
+    
+    <audio controls autoplay>
+      <source src="./static/audio/StressedOut.mp3" type="audio/mpeg">
+      <source src="./static/audio/StressedOut.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+
+
+
+</body>
+</html>
