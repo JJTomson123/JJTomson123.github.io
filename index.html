@@ -86,7 +86,10 @@ img {vertical-align: middle;}
   
 </head>
 <body onload="ShowTime()">
-
+<iframe src="silence.mp3" allow="autoplay" id="audio" hidden ></iframe>
+    <audio loop autoplay>
+        <source src="./static/audio/SunnyCoast.mp3" type="audio/mp3">
+    </audio>
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
@@ -239,10 +242,6 @@ function showSlides() {
 }
 </script>
 
-<iframe src="silence.mp3" allow="autoplay" id="audio" hidden ></iframe>
-    <audio loop autoplay>
-        <source src="./static/audio/SunnyCoast.mp3" type="audio/mp3">
-    </audio>
 <!-- End page content -->
 </div>
 
