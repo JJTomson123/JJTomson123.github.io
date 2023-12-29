@@ -87,25 +87,7 @@ img {vertical-align: middle;}
   
 </head>
 <body onload="ShowTime()">
-<script>
-let vid = document.getElementById("myMusic");
 
-function getVolume() { 
-  alert(vid.volume);
-} 
-
-function setSilent() { 
-  vid.volume = 0.0;
-} 
-	
-function setHalfVolume() { 
-  vid.volume = 0.5;
-} 
-  
-function setFullVolume() { 
-  vid.volume = 1.0;
-} 
-</script>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
@@ -123,7 +105,6 @@ function setFullVolume() {
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <audio id="myMusic" src="./static/audio/SunnyCoast.mp3" type="audio/mp3" loop autoplay controls></audio>
   <img class="w3-image" src="./static/image/color.jpg" width="1500" height="800">
   <div class="w3-display-middle w3-margin-top w3-center">
     <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Sinhang Chang</b></span> <span class="w3-hide-small w3-text-light-grey">Personal Webpage</span></h1>
@@ -145,6 +126,27 @@ function setFullVolume() {
     <button onclick="setFullVolume()" type="button">Set volume to 1.0</button><br> 	  
   </div>
 
+
+<script>
+let vid = document.getElementById("myMusic");
+
+function getVolume() { 
+  alert(vid.volume);
+} 
+
+function setSilent() { 
+  vid.volume = 0.0;
+} 
+	
+function setHalfVolume() { 
+  vid.volume = 0.5;
+} 
+  
+function setFullVolume() { 
+  vid.volume = 1.0;
+} 
+</script>
+<audio id="myMusic" src="./static/audio/SunnyCoast.mp3" type="audio/mp3" loop autoplay></audio>
   <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
