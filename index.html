@@ -125,8 +125,7 @@ img {vertical-align: middle;}
     <button onclick="setHalfVolume()" type="button">Set volume to half</button>
     <button onclick="setFullVolume()" type="button">Set volume to full</button><br> 	  
   </div>
-
-
+<audio id="myMusic" src="./static/audio/SunnyCoast.mp3" type="audio/mp3" loop autoplay></audio>
 <script>
 let vid = document.getElementById("myMusic");
 
@@ -146,7 +145,6 @@ function setFullVolume() {
   vid.volume = 1.0;
 } 
 </script>
-<audio id="myMusic" src="./static/audio/SunnyCoast.mp3" type="audio/mp3" loop autoplay></audio>
   <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
